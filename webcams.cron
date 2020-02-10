@@ -1,0 +1,11 @@
+#!/bin/bash
+DIR=$(dirname "${0}")
+cd "$DIR"
+export DISPLAY=":0.0"
+bash download_list.sh
+bash get_webcams.bash
+bash gen_webcams.bash
+kill -9 $(cat /tmp/pid)
+pid=$$
+echo $pid > /tmp/pid
+exec feh -F /tmp/webcams.jpg
