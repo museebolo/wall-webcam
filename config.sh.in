@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Project: Webcam
+# File: print_webcam.py
+# Version: 0.1
+# Create by: Rom1 <romain@museebolo.ch> - Musée Bolo - https://www.museebolo.ch
+# Date: 10/02/2020
+# Licence: GNU GENERAL PUBLIC LICENSE v3
+# Language: Python 3
+# Description: Affichage des webcam dans le mur.
+
+URL=""
+TMP="tmp"
+DEST=${TMP}/imglist
+DEST_TEMP=${TMP}/imglist.dl
+T_BOT_ID=""
+T_CHAN_ID=""
+REFRESH_DELAY=900
+
+export DISPLAY=${DISPLAY:-":0"}
