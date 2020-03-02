@@ -5,7 +5,7 @@
 # Create by: Rom1 <romain@museebolo.ch> - Musée Bolo - https://www.museebolo.ch
 # Date: 10/02/2020
 # Licence: GNU GENERAL PUBLIC LICENSE v3
-# Language: Python 3
+# Language: Bash
 # Description: Affichage des webcam dans le mur.
 
 config_f="config.sh"
